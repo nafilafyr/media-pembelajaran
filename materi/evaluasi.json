@@ -1,0 +1,92 @@
+[
+	{
+		"id" : 1,
+		"soal" : "Berikut yang termasuk campuran yang komposisinya merata adalah . . .",
+		"a" : "Air dan Kopi",
+		"b" : "Air dan Pasir",
+        "c" : "Air dan Tanah",
+        "d" : "Air dan Gula",
+        "jawaban" : "D"
+	},
+    {
+		"id" : 2,
+		"soal" : "Campuran homogen disebut juga dengan . . .",
+		"a" : "Campuran",
+		"b" : "Larutan",
+        "c" : "Zat Murni",
+        "d" : "Pelarut",
+        "jawaban" : "B" 
+	},
+    {
+		"id" : 3,
+		"soal" : "Larutan garam merupakan contoh campuran . . .",
+		"a" : "Heterogen",
+		"b" : "Homogen",
+        "c" : "Larutan",
+        "d" : "Zat Murni",
+        "jawaban" : "B" 
+	},
+    {
+		"id" : 4,
+		"soal" : "Perhatikan zat-zat berikut ini! <br>(1) Emas<br>(2) Besi<br>(3) Air kopi<br>(4) Sirop<br>(5) Alumunium<br>(6) Air garam <br><br>Zat nomor (3) dan (4) termasuk dalam . . .",
+		"a" : "Campuran",
+		"b" : "Heterogen",
+        "c" : "Murni",
+        "d" : "Adiktif",
+        "jawaban" : "A"
+	},
+    {
+		"id" : 5,
+		"soal" : "Perhatikan zat-zat berikut ini! <br>(1) Emas<br>(2) Besi<br>(3) Air kopi<br>(4) Sirop<br>(5) Alumunium<br>(6) Air garam <br><br>Apabila zat nomor (6) dijemur, maka yang terjadi adalah . . .",
+		"a" : "Air akan menguap dan tertinggal kristal garam",
+		"b" : "Air akan menjadi panas dan garam akan larut",
+        "c" : "Garam akan mengendap bersama air",
+        "d" : "Air akan berubah warna menjadi lebih keruh",
+        "jawaban" : "A"
+	},
+	{
+		"id" : 6,
+		"soal" : "Perhatikan gambar berikut! <br><div class='text-left'><img src='../assets/img/Gambarlat3.png' width='15%' height='auto' alt='Gambar Air dan Sirup'></div><br>Zat pada gambar di atas merupakan hasil dari proses . . .",
+		"a" : "Pelarutan",
+		"b" : "Pembekuan",
+        "c" : "Penguapan",
+        "d" : "Pengendapan",
+        "jawaban" : "C"
+	},
+    {
+		"id" : 7,
+		"soal" : "Salah satu contoh campuran yang dapat dipisahkan dengan cara pengkristalan adalah . . .",
+		"a" : "Campuran air laut",
+		"b" : "Campuran air dan kopi",
+        "c" : "Campuran udara",
+        "d" : "Campuran pasir ",
+        "jawaban" : "A" 
+	},
+    {
+		"id" : 8,
+		"soal" : "Pemisahan campuran air kopi dapat menggunakan cara penyaringan karena . . .",
+		"a" : "Kopi sangat sulit untuk tercampur dengan air",
+		"b" : "Kopi mudah melewati lubang-lubang penyaringan",
+        "c" : "Kopi dan air memliki perbedaan massa yang sama",
+        "d" : "Ukuran partikel kopi lebih besar dari papa air",
+        "jawaban" : "D" 
+	},
+    {
+		"id" : 9,
+		"soal" : "Perunggu merupakan logam yang terdiri dari campuran . . .",
+		"a" : "Tembaga dan Timah",
+		"b" : "Zeng dan Sirop",
+        "c" : "Emas dan Perak",
+        "d" : "Alumunium dan Batu",
+        "jawaban" : "A"
+	},
+    {
+		"id" : 10,
+		"soal" : "Dibawah ini merupakan Campuran homogen dalam bentuk cairan adalah . . .",
+		"a" : "Udara",
+		"b" : "Cuka",
+        "c" : "Kuningan",
+        "d" : "Gas lpg",
+        "jawaban" : "B"
+	}
+]

@@ -1,20 +1,22 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDwQGT55Ja0FvWa-u2ZcxbezKQxVwdegE0",
-    authDomain: "tazhn-c379b.firebaseapp.com",
-    projectId: "tazhn-c379b",
-    storageBucket: "tazhn-c379b.appspot.com",
-    messagingSenderId: "905861472863",
-    appId: "1:905861472863:web:4968b1237685732e95f1ea",
-    measurementId: "G-ZY6Y1NZM6Q"
-};
+    apiKey: "AIzaSyDQ-KGia_KhTjpw_lvVM27K39LzI56LNB0",
+    authDomain: "modul-alat-pernapasan.firebaseapp.com",
+    projectId: "modul-alat-pernapasan",
+    storageBucket: "modul-alat-pernapasan.appspot.com",
+    messagingSenderId: "295295637069",
+    appId: "1:295295637069:web:b5a24ff36e9318c5612e04",
+    measurementId: "G-1R7GBGBVLS"
+  };
   
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const db = firebase.database();
+const db = firebase.firestore();
+const NILAIDB = db.collection('nilai');
 
 let jawabB=[];
+let nilai = 0;
 
 function mulai5() {
     let namaD = document.getElementById('nama').value;
@@ -198,7 +200,7 @@ let evaluasi_7 = "";
 let evaluasi_8 = "";
 let evaluasi_9 = "";
 let evaluasi_10 = "";
-let nilai = 0;
+
 function cek1(pilih){
     evaluasi_1 = pilih;
     document.getElementById("soal1").classList.add('active','btn-primary');
@@ -258,6 +260,10 @@ let evaluasi=[];
 function cek(){
     evaluasi=[evaluasi_1,evaluasi_2,evaluasi_3,evaluasi_4,evaluasi_5,evaluasi_6,evaluasi_7,evaluasi_8,evaluasi_9,evaluasi_10];
 }
+
+function waktu() {
+    return new Date();
+}
         
 function cekEvaluasi(){
     let namaD = document.getElementById('nama').value;
@@ -309,10 +315,10 @@ function cekEvaluasi(){
             hasilL.hidden = false;
         }
 
-        let harinya = hari();
+        // let harinya = hari();
         let waktunya = waktu();
 
-        createTask(sekolahD, namaD, kelasD, nilai, waktunya, harinya);
+        createTask(sekolahD, namaD, kelasD, nilai, waktunya, 'evaluasi');
     }
 }
 
@@ -357,10 +363,20 @@ function cekEvaluasiTO() {
         hasilL.hidden = false;
     }
 
-    let harinya = hari();
+    // let harinya = hari();
     let waktunya = waktu();
 
-    createTask(sekolahD, namaD, kelasD, nilai, waktunya, harinya);
+    createTask(sekolahD, namaD, kelasD, nilai, waktunya, 'evaluasito');
+}
+
+function createTask(sekolah,nama,kelas,nilai,waktu,tipe) {
+    NILAIDB.add({nama,kelas,sekolah,waktu,nilai,tipe})
+        .then((doc)=>{
+            console.log('Nilai telah tersimpan');
+        })
+        .catch((error)=>{
+            alert(error)
+        })
 }
 
 let indeks = document.getElementById("indeks");
